@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Interactive Portfolio Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <img src="rk.png" alt="Logo">
+        </div>
+        <h1>Rafael Kent Estrada</h1>
+        <p>Web Developer | Student </p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        
+        <p style="color: #080000;"> Hello! I am Kent. Ever since I stumbled upon the fascinating world of web development, I have been on an exciting journey to create innovative and user-friendly digital experiences and  I enjoy crafting beautiful and responsive websites that captivate users and deliver seamless interactions.</p>
+        
+        <img class="profile-image" src="kent.jpg" alt="Profile Image">
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: rava.estrada.up@phinmaed.com</p>
+            <p>Phone: 09614781997</p>
+        </div>
+
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>  NaspiFood</h3>
+            <img src="naspi.png" alt="Project 1">
+            <p>Description of NaspiFood. <a href="#" onclick="showModal('NaspiFood Website', 'Welcome to our delightful food website NaspiFood, where flavors come alive! We are your ultimate destination for culinary inspiration, offering a mouthwatering array of recipes, cooking tips, and food adventures. Discover the joy of exploring new cuisines, learn kitchen hacks, and find creative ways to elevate your dining experience. Savor the flavors, celebrate the love for food, and let the culinary adventure begin! Bon appétit!')">Read more</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Personal Profile</h3>
+            <img src="profile.png" alt="Project 2">
+            <p>Description of Personal Profile <a href="#" onclick="showModal('Personal Profile Website', 'Welcome to my simple personal profile website, where you can discover the essence of who I am. Here, simplicity meets substance, allowing you to explore my background, skills, and passions with ease. Whether youre a potential employer, collaborator, or just a curious visitor, I hope this simple profile gives you a clear understanding of my personality and what drives me.')">Read more</a></p>
+        </div>
+
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="hideModal()">&times;</span>
+                <h2 id="projectTitle"></h2>
+                <p id="projectDescription"></p>
+            </div>
+        </div>
+
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Python</li>
+
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
